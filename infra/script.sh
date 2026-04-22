@@ -16,6 +16,7 @@ export DB_PASSWORD=${db_pass}
 # System Update
 sudo apt update -y
 sudo apt install -y python3 python3-pip python3-venv git
+sudo apt install -y python3-venv python3-pip
 
 cd /home/ubuntu
 git clone https://github.com/Sivasaiteja2/AWS-2-Tier-Student-Registration-System
