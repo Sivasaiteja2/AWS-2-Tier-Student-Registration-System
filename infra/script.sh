@@ -22,15 +22,20 @@ cd /home/ubuntu
 git clone https://github.com/Sivasaiteja2/AWS-2-Tier-Student-Registration-System
 cd AWS-2-Tier-Student-Registration-System
 cd student-app
-sudo apt update && sudo apt install -y python3-venv
 
+sudo apt update
+sudo apt install -y python3.12-venv python3-pip
+
+python3 --version
+
+rm -rf venv
 python3 -m venv venv
-source venv/bin/activate
 
-sudo apt install python3-pip -y
+. venv/bin/activate
 
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Start Gunicorn (It now has access to the exported variables)
-nohup gunicorn -w 2 -b 0.0.0.0:5000 app:app > app.log 2>&1 &
+pkill gunicorn || true
+
+nohup gunicorn -w 2 -b 0.0.0.0:5000 app > app.log 2>&1 &
