@@ -22,6 +22,7 @@ cd /home/ubuntu
 git clone https://github.com/Sivasaiteja2/AWS-2-Tier-Student-Registration-System
 cd AWS-2-Tier-Student-Registration-System
 cd student-app
+sudo apt update && sudo apt install -y python3-venv
 
 python3 -m venv venv
 source venv/bin/activate
