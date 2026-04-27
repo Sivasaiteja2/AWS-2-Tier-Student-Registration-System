@@ -38,8 +38,11 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+pip3 install --upgrade pip
+# pip install -r requirements.txt
+
+pip3 install -r requirements.txt
+
 
 # Kill old gunicorn
 pkill gunicorn || true
