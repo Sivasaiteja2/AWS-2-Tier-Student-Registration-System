@@ -1,0 +1,11 @@
+[2026-05-13 05:21:46 +0000] [2875] [INFO] Starting gunicorn 22.0.0
+[2026-05-13 05:21:46 +0000] [2875] [INFO] Listening at: http://0.0.0.0:5000 (2875)
+[2026-05-13 05:21:46 +0000] [2875] [INFO] Using worker: sync
+[2026-05-13 05:21:46 +0000] [2891] [INFO] Booting worker with pid: 2891
+[2026-05-13 05:21:46 +0000] [2893] [INFO] Booting worker with pid: 2893
+[2026-05-13 05:35:26 +0000] [2893] [INFO] Worker exiting (pid: 2893)
+[2026-05-13 05:35:26 +0000] [2891] [INFO] Worker exiting (pid: 2891)
+[2026-05-13 05:35:26 +0000] [2875] [INFO] Handling signal: term
+[2026-05-13 05:35:26 +0000] [2875] [ERROR] Worker (pid:2891) was sent SIGTERM!
+[2026-05-13 05:35:26 +0000] [2875] [ERROR] Worker (pid:2893) was sent SIGTERM!
+[2026-05-13 05:35:26 +0000] [2875] [INFO] Shutting down: Master
